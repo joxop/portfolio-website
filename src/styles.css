@@ -3,9 +3,9 @@ body{
 }
 
 section {
-    height: 500px;
-    background-color: yellow;
-    border: solid black 1px;
+    /*height: 500px;*/
+    background-color: white;
+    /*border: solid black 1px;*/
 }
 
 .hero{
@@ -47,10 +47,19 @@ h1{
 
 }
 
+h2{
+    font-size:50px ;
+}
+
 p{
     margin: 0px;
     font-weight: 300;
     font-size: 30px;
+}
+
+.subtext{
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .hero-area{
@@ -104,3 +113,91 @@ p{
     margin: 10px;
 
 }
+
+.sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+
+.headshot{
+    width: 300px;
+    border-radius: 150px;
+}
+
+.headshot-container{
+    display: flex;
+    align-items: center;
+}
+
+.project-card{
+    width: 300px;
+    height: 500px;
+    /*border: 1px solid black;*/
+    box-shadow: 5px 5px 20px rgb(197, 195,195);
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.hamburger{
+    display:none;
+}
+
+.hamburger:focus{
+    outline:0;
+}
+
+@media only screen and (max-width: 1000px){
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+
+    ul.show{
+        display: block;
+    }
+
+
+    nav{
+        /*align-items: flex-start;*/
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo{
+        display: none;
+    }
+
+}
+
+
