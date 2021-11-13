@@ -19,6 +19,9 @@ section {
 footer{
     height: 500px;
     background-color: black;
+    color:white;
+    text-align: center;
+    padding: 80px;
 
 }
 
@@ -126,8 +129,24 @@ p{
     text-align: center;
     padding: 80px;
 }
-
-
+.project-image{
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project-link{
+    text-decoration: none;
+    color: #ef744b;
+}
 .headshot{
     width: 300px;
     border-radius: 150px;
